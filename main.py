@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt, mpld3
 import json
 from datetime import datetime
 from collections import defaultdict
@@ -39,3 +39,4 @@ for symbol,array_values in plot_data.items():
     plt.plot(x, y, label=symbol)
     plt.legend()
 plt.savefig("out.png")
+mpld3.show()
